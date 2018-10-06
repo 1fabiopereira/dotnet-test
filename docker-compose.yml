@@ -1,0 +1,11 @@
+version: '2'
+services:
+  # Inicializa o serviço do Mysql
+  mongodb:
+    image: 'mysql:5.7'
+    container_name: "Pos2909DB"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3306:3306

@@ -1,0 +1,38 @@
+@model IEnumerable<Pos2909.db.Models.User>
+
+@{
+    ViewData["Title"] = "Listar";
+}
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">CPF</th>
+      <th scope="col">Email</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Nacionalidade</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Cidade</th>
+    </tr>
+  </thead>
+  <tbody>
+@foreach(var user in Model)
+{
+    <tr>
+      <td>@user.Id</td>
+      <td>@user.FullName</td>
+      <td>@user.Cpf</td>
+      <td>@user.Email</td>
+      <td>@user.Telefone</td>
+      <td>@user.Sexo</td>
+      <td>@user.Nacionalidade</td>
+      <td>@user.Estado</td>
+      <td>@user.Cidade</td>
+    </tr>
+}
+  </tbody>
+</table>
+<span class="text-success">Existem @ViewData["size"] usuários cadastrados</span>

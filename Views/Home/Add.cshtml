@@ -1,0 +1,143 @@
+@{
+    ViewData["Title"] = "Adicionar";
+}
+<div class="container">
+       <table class="table table-striped">
+          <tbody>
+             <tr>
+                <td colspan="1">
+                   <form class="well form-horizontal">
+                      <fieldset>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Nome</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                        <input 
+                                            id="nome"
+                                            name="nome"
+                                            placeholder="Nome"
+                                            class="form-control"
+                                            required="true"
+                                            value=""
+                                            type="text">
+                                </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">CPF</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                   <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <input 
+                                        id="cpf"
+                                        name="cpf"
+                                        placeholder="CPF" 
+                                        class="form-control"
+                                        required="true"
+                                        value=""
+                                        type="text">
+                                    </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">E-mail</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                   <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <input 
+                                        id="email"
+                                        name="email"
+                                        placeholder="E-mail"
+                                        class="form-control"
+                                        required="true"
+                                        value=""
+                                        type="text">
+                                </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Telefone</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                   <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <input
+                                        id="telefone"
+                                        name="telefone"
+                                        placeholder="Telefone ou Celular"
+                                        class="form-control"
+                                        required="true"
+                                        value=""
+                                        type="text">
+                                    </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Sexo</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select id="sexo" class="selectpicker form-control">
+                                     <option selected disabled>Selecione seu sexo</option>
+                                     <option value="M">Masculino</option>
+                                     <option value="F">Feminino</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Nacionalidade</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select id="nacionalidade" class="selectpicker form-control">
+                                     <option selected disabled>Selecione sua Nacionalidade</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Estado</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>                                  
+                                  <select id="estados" class="selectpicker form-control">
+                                     <option selected disabled>Selecione seu Estado</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Cidade</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>                                  
+                                  <select id="cidades" class="selectpicker form-control">
+                                     <option selected disabled>Selecione sua Cidade</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                        <div class="form-group" style="display: none;">
+                            <label class="col-md-4 control-label">Nacionalidade</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                   <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <input
+                                        id="nacionalidade"
+                                        name="nacionalidade"
+                                        placeholder="Insira sua nacionalidade"
+                                        class="form-control"
+                                        required="true"
+                                        value=""
+                                        type="text">
+                                    </div>
+                            </div>
+                         </div>
+                      </fieldset>
+                   </form>
+                </td>
+             </tr>
+          </tbody>
+       </table>
+    </div>
